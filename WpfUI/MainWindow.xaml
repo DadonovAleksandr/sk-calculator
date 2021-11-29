@@ -7,6 +7,40 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="FirstNumber"
+                   Grid.Row="0"
+                   Grid.Column="0"/>
+        <TextBox x:Name="tbFirstNumber"
+                 Grid.Row="1"
+                 Grid.Column="0"/>
+        <TextBlock Text="SecondNumber"
+                   Grid.Row="2"
+                   Grid.Column="0"/>
+        <TextBox x:Name="tbSecondNumber"
+                 Grid.Row="3"
+                 Grid.Column="0"/>
+        <TextBlock Text="Result"
+                   Grid.Row="4"
+                   Grid.Column="0"/>
+        <TextBox x:Name="tbResult"
+                 Grid.Row="5"
+                 Grid.Column="0"/>
+        <Button x:Name="btResult" 
+            Content="Calc" 
+                Grid.Row="0"
+                Grid.Column="1"
+                Grid.RowSpan="6"/>
     </Grid>
 </Window>
