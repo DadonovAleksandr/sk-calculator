@@ -6,6 +6,41 @@
         xmlns:local="clr-namespace:WpfUI"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <Style TargetType="{x:Type TextBlock}">
+            <Setter Property="Background" Value="Bisque"/>         
+            <Setter Property="FontFamily" Value="Segoe UI"/>         
+            <Setter Property="Foreground" Value="BlueViolet"/>         
+            <Setter Property="FontStyle" Value="Italic"/>         
+            <Setter Property="Padding" Value="20,10"/>         
+            <Setter Property="FontSize" Value="20"/>         
+            <Setter Property="TextAlignment" Value="Left"/>         
+            <Setter Property="TextWrapping" Value="Wrap"/>         
+            <Setter Property="Margin" Value="2"/>         
+        </Style>
+        <Style TargetType="{x:Type TextBox}">
+            <Setter Property="Background" Value="Aquamarine"/>         
+            <Setter Property="FontFamily" Value="Segoe UI"/>         
+            <Setter Property="Foreground" Value="BlueViolet"/>         
+            <Setter Property="FontStyle" Value="Italic"/>         
+            <Setter Property="Padding" Value="20,10"/>         
+            <Setter Property="FontSize" Value="33"/>         
+            <Setter Property="TextAlignment" Value="Left"/>         
+            <Setter Property="TextWrapping" Value="Wrap"/>         
+            <Setter Property="Margin" Value="2"/> 
+        </Style>
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="FontSize" Value="35"/>         
+            <Setter Property="Margin" Value="5"/> 
+            <Style.Triggers>
+                <Trigger Property="Button.IsPressed" Value="True">
+                    <Setter Property="Control.Foreground" Value="Blue"/>
+                    <Setter Property="Control.FontSize" Value="55"/>
+                    <Setter Property="Control.FontWeight" Value="UltraBold"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"></RowDefinition>
